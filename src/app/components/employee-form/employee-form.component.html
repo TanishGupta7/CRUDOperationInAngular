@@ -1,0 +1,56 @@
+<div class="p-8 mt-4">
+    <div class="shadow p-6">
+       @if (isEdit) {
+        <h4>Edit Employee Form</h4>
+       }
+       @else{
+        <h4>Create Employee Form</h4>
+       }
+        <form [formGroup]="employeeForm" (ngSubmit)="save()">
+            <!-- Name -->
+            <div class="w-full flex flex wrap">
+                <mat-form-field class="w-full">
+                    <mat-label>Name</mat-label>
+                    <input type="text" matInput placeholder="Ex. John Doe" formControlName="name" />
+                  </mat-form-field>
+            </div>
+            <!-- Email -->
+            <div class="w-full flex flex wrap">
+                <mat-form-field class="w-full">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput placeholder="Ex. johndoe@example.com" formControlName="email" />
+                  </mat-form-field>
+            </div>
+            <!-- Phone -->
+            <div class="w-full flex flex wrap">
+                <mat-form-field class="w-full">
+                    <mat-label>Contact Number</mat-label>
+                    <input type="text" matInput placeholder="Ex. 9874566584" formControlName="phone" />
+                  </mat-form-field>
+            </div>
+            <!-- Age -->
+            <div class="w-full flex flex wrap">
+                <mat-form-field class="w-full">
+                    <mat-label>Age</mat-label>
+                    <input type="number" matInput placeholder="Ex. 25" formControlName="age" />
+                  </mat-form-field>
+            </div>
+            <div class="w-full flex flex wrap">
+                <mat-form-field class="w-full">
+                    <mat-label>Salary</mat-label>
+                    <input type="number" matInput placeholder="Ex. 8500000" formControlName="salary" />
+                  </mat-form-field>
+            </div>
+            <!-- Submit Button -->
+            <div class="flex justify-center">
+                @if(isEdit)
+                {
+                    <button mat-stroked-button color="primary">Update</button>
+                }
+                @else {
+                    <button mat-stroked-button color="primary"[disabled]="!employeeForm.valid">Save</button>
+                }
+            </div>
+        </form>
+    </div>
+</div>
