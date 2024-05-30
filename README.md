@@ -1,40 +1,27 @@
-# CRUD Employee Management System
+# CrudAngular
 
-## Overview
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
-This project is a complete CRUD (Create, Read, Update, Delete) Employee Management System that consists of two parts:
-- **Frontend:** Developed using Angular, providing a user-friendly interface for managing employees.
-- **Backend:** Developed using ASP.NET Core, providing RESTful API endpoints for employee data management.
+## Development server
 
-## Features
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- Add new employees
-- View a list of all employees
-- Edit employee details
-- Delete employees
-- Input validation
-- Notification messages for successful operations
+## Code scaffolding
 
-## Technologies Used
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Frontend
+## Build
 
-- Angular
-- Angular Material
-- ngx-toastr for notifications
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Backend
+## Running unit tests
 
-- ASP.NET Core
-- Entity Framework Core
-- SQL Server
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Setup and Installation
+## Running end-to-end tests
 
-### Prerequisites
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-- Node.js and npm
-- Angular CLI
-- .NET 6 SDK
-- SQL Server
+## Further help
 
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
